@@ -2,80 +2,147 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="googlebot" content="noindex, nofollow">
+<meta name="theme-color" content="#0d0d0f">
 <title>Marcus&#x27; Barbershop | Barbershop in Port Clinton, OH (Demo)</title>
 <meta name="description" content="Clean fades, sharp lineups and straight-razor shaves in Port Clinton.">
+<link rel="preload" as="image" href="img/hero-m.jpg" media="(max-width: 800px)">
+<link rel="preload" as="image" href="img/hero.jpg" media="(min-width: 801px)">
 <style>
-:root{--c1:#111111;--c2:#c8102e;--ink:#1b1b1f;--muted:#5d5f68;--bg:#f7f6f3}
+:root{--c1:#0d0d0f;--c2:#e3263b;--c3:#1f5fbf;--ink:#15151a;--muted:#5d5f68;--bg:#f4f4f5}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
-.demo{background:#fff3cd;color:#5c4400;font-size:13px;text-align:center;padding:8px 12px;border-bottom:1px solid #e9d38a}
-header.top{position:sticky;top:0;z-index:5;background:var(--c1);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 16px}
-header.top b{font-size:17px}header.top a.call{background:var(--c2);color:var(--c1);text-decoration:none;font-weight:700;padding:8px 14px;border-radius:999px;font-size:14px}
-.hero{background:radial-gradient(circle at 80% 10%,color-mix(in srgb,var(--c2) 45%,transparent),transparent 55%),linear-gradient(160deg,var(--c1),#000 140%);color:#fff;padding:48px 20px 56px;text-align:center}
-.hero .ico{font-size:52px}
-.hero h1{font-size:clamp(30px,8vw,52px);margin:8px 0 4px;letter-spacing:-.5px}
-.hero .city{text-transform:uppercase;letter-spacing:3px;font-size:13px;color:var(--c2);font-weight:700}
-.hero p{max-width:520px;margin:12px auto 22px;font-size:17px;opacity:.92}
-.stars{display:inline-block;background:rgba(255,255,255,.12);border-radius:999px;padding:6px 14px;font-size:14px;margin-bottom:20px}
-.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 20px;border-radius:12px;font-weight:700;text-decoration:none;background:var(--c2);color:var(--c1);border:2px solid var(--c2)}
-.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
-section{padding:40px 18px;max-width:960px;margin:0 auto}
-h2{font-size:26px;margin:0 0 18px}h2:after{content:"";display:block;width:44px;height:4px;background:var(--c2);border-radius:4px;margin-top:8px}
-.grid{display:grid;grid-template-columns:1fr;gap:12px}
-@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}@media(min-width:900px){.grid{grid-template-columns:1fr 1fr 1fr}}
-.card{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 1px 3px rgba(0,0,0,.08);border-left:4px solid var(--c2)}
-.card h3{margin:0 0 4px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
-.extra{color:var(--muted);margin-top:14px}
-table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-td{padding:12px 16px;border-bottom:1px solid #eee}td:last-child{text-align:right;font-weight:600}
-.ph{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
-.ph div{aspect-ratio:1;border-radius:12px;background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--c1) 12%,#fff),color-mix(in srgb,var(--c1) 12%,#fff) 10px,#fff 10px,#fff 20px);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;padding:6px}
-.map{border:0;width:100%;height:280px;border-radius:14px;box-shadow:0 1px 3px rgba(0,0,0,.08);background:#ddd}
-form{display:grid;gap:10px;background:#fff;padding:18px;border-radius:14px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-input,textarea{font:inherit;padding:12px;border:1px solid #ccc;border-radius:10px;width:100%}
-form button{font:inherit;font-weight:700;padding:13px;border:0;border-radius:10px;background:var(--c1);color:#fff}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;padding-bottom:76px}
+a{color:inherit}
+.demo{background:#fff3cd;color:#5c4400;font-size:12.5px;text-align:center;padding:7px 12px;border-bottom:1px solid #e9d38a;position:relative;z-index:30}
+header.top{position:fixed;left:0;right:0;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:12px 18px;color:#fff;transition:background .3s,box-shadow .3s,top .3s}
+header.top.solid{background:var(--c1);box-shadow:0 6px 20px rgba(0,0,0,.25)}
+header.top b{font-size:18px;letter-spacing:.2px;text-shadow:0 1px 8px rgba(0,0,0,.4)}
+header.top nav a{color:#fff;text-decoration:none;font-weight:600;margin-left:18px;font-size:15px;opacity:.9}
+header.top nav a:hover{opacity:1;color:var(--c2)}
+@media(max-width:760px){header.top nav{display:none}}
+.hero{position:relative;min-height:92svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--c1)}
+.hero .bg{position:absolute;inset:0;background:url(img/hero-m.jpg) center/cover no-repeat;transform:scale(1.08);animation:zoom 14s ease-out forwards}
+@media(min-width:801px){.hero .bg{background-image:url(img/hero.jpg)}}
+@keyframes zoom{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.15) 30%,color-mix(in srgb,var(--c1) 70%,transparent) 68%,var(--c1) 100%)}
+.hero .in{position:relative;z-index:2;padding:120px 22px 56px;max-width:1040px;margin:0 auto;width:100%}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--c2);color:var(--c1);font-weight:800;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:7px 14px;border-radius:999px}
+.hero h1{font-size:clamp(40px,11vw,84px);line-height:.98;margin:16px 0 12px;letter-spacing:-1.5px;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero p.tag{font-size:clamp(17px,4.4vw,22px);max-width:620px;margin:0 0 20px;opacity:.95}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;font-size:14px}
+.meta span{background:rgba(255,255,255,.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);padding:7px 13px;border-radius:999px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:14px;font-weight:800;text-decoration:none;background:var(--c2);color:var(--c1);border:2px solid var(--c2);transition:transform .2s,box-shadow .2s;font-size:16px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.75)}
+.photo-note{position:absolute;right:10px;bottom:10px;z-index:3;font-size:11px;background:rgba(0,0,0,.55);color:#fff;padding:4px 9px;border-radius:6px}
+section{padding:64px 20px}.wrap{max-width:1040px;margin:0 auto}
+.eyebrow{color:var(--c3);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12.5px}
+h2{font-size:clamp(28px,7vw,42px);margin:6px 0 24px;letter-spacing:-.6px;line-height:1.1}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}@media(min-width:960px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:#fff;border-radius:18px;padding:20px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);transition:transform .25s,box-shadow .25s;border:1px solid rgba(0,0,0,.04)}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.12)}
+.card .ic{flex:0 0 52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;background:linear-gradient(135deg,var(--c2),color-mix(in srgb,var(--c2) 55%,#fff))}
+.card h3{margin:2px 0 4px;font-size:17.5px}.card p{margin:0;color:var(--muted);font-size:15px}
+.extra{color:var(--muted);margin-top:18px;font-size:16px}
+.dark{background:var(--c1);color:#fff}.dark .eyebrow{color:var(--c2)}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gal figure{margin:0;position:relative;border-radius:16px;overflow:hidden;aspect-ratio:1}
+.gal figure:first-child{grid-column:span 2;aspect-ratio:16/10}
+@media(min-width:760px){.gal{grid-template-columns:2fr 1fr 1fr}.gal figure:first-child{grid-column:auto;grid-row:span 1;aspect-ratio:auto}}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:8px;bottom:8px;font-size:11px;background:rgba(0,0,0,.6);color:#fff;padding:3px 8px;border-radius:6px}
+.galnote{margin:14px 0 0;font-size:14px;opacity:.8}
+.two{display:grid;gap:18px}@media(min-width:860px){.two{grid-template-columns:1fr 1.3fr}}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+td{padding:14px 18px;border-bottom:1px solid #eee}tr:last-child td{border-bottom:0}td:last-child{text-align:right;font-weight:700}
 .note{font-size:13px;color:var(--muted)}
-footer{background:var(--c1);color:#fff;text-align:center;padding:26px 16px;font-size:14px}footer a{color:var(--c2)}
-.fab{position:fixed;right:16px;bottom:16px;background:var(--c2);color:var(--c1);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
-@media(min-width:900px){.fab{display:none}}
+.map{border:0;width:100%;height:100%;min-height:300px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08);background:#ddd}
+.addr{font-size:18px;font-weight:700;margin:0 0 6px}
+form{display:grid;gap:10px;background:#fff;padding:22px;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+input,textarea{font:inherit;padding:14px;border:1.5px solid #ddd;border-radius:12px;width:100%;transition:border-color .2s}
+input:focus,textarea:focus{outline:0;border-color:var(--c3)}
+form button{font:inherit;font-weight:800;padding:15px;border:0;border-radius:12px;background:var(--c1);color:#fff;cursor:pointer;transition:transform .2s}
+form button:hover{transform:translateY(-2px)}
+.soc{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.soc a{text-decoration:none;font-weight:700;padding:11px 16px;border-radius:12px;border:2px solid var(--c1);color:var(--c1);transition:background .2s,color .2s}
+.soc a:hover{background:var(--c1);color:#fff}
+footer{background:#0c0c0f;color:rgba(255,255,255,.75);text-align:center;padding:30px 16px 40px;font-size:14px}footer a{color:var(--c2)}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(15,15,18,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.callbar a{flex:1;text-align:center;text-decoration:none;font-weight:800;padding:14px 10px;border-radius:12px;font-size:16px}
+.callbar .c{background:var(--c2);color:var(--c1);flex:1.6}.callbar .d{background:rgba(255,255,255,.12);color:#fff}
+@media(min-width:900px){.callbar{left:auto;right:20px;bottom:20px;border-radius:18px;width:420px}}
+.fade{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.fade.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 <div class="demo">Demo site made for Marcus&#x27; Barbershop by Noah Kurek. Not affiliated, not live.</div>
-<header class="top"><b>Marcus&#x27; Barbershop</b><a class="call" href="tel:+15672806835">Call (567) 280-6835</a></header>
-<div class="hero">
-  <div class="ico" aria-hidden="true">💈</div>
-  <div class="city">Barbershop · Port Clinton, Ohio</div>
-  <h1>Marcus&#x27; Barbershop</h1>
-  <p>Clean fades, sharp lineups and straight-razor shaves in Port Clinton.</p>
-  <div class="stars">★ 5.0 from 71 public reviews</div>
-  <div class="btns"><a class="btn" href="tel:+15672806835">📞 Call Now</a><a class="btn ghost" href="#visit">Get Directions</a></div>
-</div>
-<section id="services"><h2>Services</h2><div class="grid">
-<div class="card"><h3>Fades</h3><p>Clean, consistent fades.</p></div>
-<div class="card"><h3>Lineups</h3><p>Crisp lineups and edge-ups.</p></div>
-<div class="card"><h3>Straight-Razor Shaves</h3><p>Hot towel and razor.</p></div>
-<div class="card"><h3>Two Barbers</h3><p>Marcus and Ty (Tysean) in the chair.</p></div>
-<div class="card"><h3>Kids&#x27; Cuts</h3><p>Patient with the little ones.</p></div>
-<div class="card"><h3>Walk-ins Welcome</h3><p>Stop by during open hours.</p></div>
+<header class="top" id="hdr"><b>Marcus&#x27; Barbershop</b><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav></header>
+<section class="hero" style="padding:0">
+  <div class="bg" role="img" aria-label="Sample stock photo"></div>
+  <div class="in">
+    <span class="pill">💈 Barbershop · Port Clinton, OH</span>
+    <h1>Marcus&#x27; Barbershop</h1>
+    <p class="tag">Clean fades, sharp lineups and straight-razor shaves in Port Clinton.</p>
+    <div class="meta"><span>★ 5.0 · 71 public reviews</span><span>📍 Port Clinton, Ohio</span></div>
+    <div class="btns"><a class="btn" href="tel:+15672806835">📞 Call (567) 280-6835</a><a class="btn ghost" href="#visit">Get Directions</a></div>
+  </div>
+  <div class="photo-note">Sample stock photo. Your own photos go here.</div>
+</section>
+<section id="services"><div class="wrap">
+  <div class="eyebrow fade">What we do</div><h2 class="fade">Services</h2>
+  <div class="grid">
+<div class="card fade"><div class="ic">💈</div><div><h3>Fades</h3><p>Clean, consistent fades.</p></div></div>
+<div class="card fade"><div class="ic">📐</div><div><h3>Lineups</h3><p>Crisp lineups and edge-ups.</p></div></div>
+<div class="card fade"><div class="ic">🪒</div><div><h3>Straight-Razor Shaves</h3><p>Hot towel and razor.</p></div></div>
+<div class="card fade"><div class="ic">👥</div><div><h3>Two Barbers</h3><p>Marcus and Ty (Tysean) in the chair.</p></div></div>
+<div class="card fade"><div class="ic">🧒</div><div><h3>Kids&#x27; Cuts</h3><p>Patient with the little ones.</p></div></div>
+<div class="card fade"><div class="ic">🚶</div><div><h3>Walk-ins Welcome</h3><p>Stop by during open hours.</p></div></div>
+  </div>
 </div></section>
-<section id="photos"><h2>Photos</h2><div class="ph"><div>Photo placeholder<br>(your work here)</div><div>Photo placeholder<br>(your shop)</div><div>Photo placeholder<br>(your team)</div></div></section>
-<section id="hours"><h2>Hours</h2><table>
+<section id="gallery" class="dark"><div class="wrap">
+  <div class="eyebrow fade">Gallery</div><h2 class="fade">A look inside</h2>
+  <div class="gal fade">
+    <figure><img src="img/g1.jpg" alt="Sample stock photo" loading="lazy" width="720" height="720"><figcaption>Sample photo</figcaption></figure>
+    <figure><img src="img/g2.jpg" alt="Sample stock photo" loading="lazy" width="720" height="720"><figcaption>Sample photo</figcaption></figure>
+    <figure><img src="img/g3.jpg" alt="Sample stock photo" loading="lazy" width="720" height="720"><figcaption>Sample photo</figcaption></figure>
+  </div>
+  <p class="galnote">These are sample stock photos, not Marcus&#x27; Barbershop. Your own photos go here.</p>
+</div></section>
+<section id="hours"><div class="wrap two">
+  <div><div class="eyebrow fade">Hours</div><h2 class="fade">When we're open</h2>
+  <table class="fade">
 <tr><td>Tue–Fri</td><td>10 AM – 5 PM</td></tr>
 <tr><td>Sat</td><td>9 AM – 1 PM</td></tr>
 <tr><td>Sun–Mon</td><td>Closed</td></tr>
-</table><p class="note">Hours from public listings. Please call to confirm.</p></section>
-<section id="visit"><h2>Visit Us</h2><p><b>426 Fremont Rd, Port Clinton, OH 43452</b><br><a href="https://www.google.com/maps/search/?api=1&query=Marcus%27%20Barbershop%2C%20426%20Fremont%20Rd%2C%20Port%20Clinton%2C%20OH%2043452" target="_blank" rel="noopener">Open in Google Maps →</a></p>
-<iframe class="map" loading="lazy" title="Map" src="https://maps.google.com/maps?q=Marcus%27%20Barbershop%2C%20426%20Fremont%20Rd%2C%20Port%20Clinton%2C%20OH%2043452&output=embed"></iframe></section>
-<section id="contact"><h2>Contact</h2>
-<form onsubmit="event.preventDefault();this.querySelector('.note').textContent='Demo only: this form is not connected yet. Please call (567) 280-6835.';">
-<input placeholder="Your name" required><input placeholder="Phone or email" required><textarea rows="4" placeholder="How can we help?"></textarea>
-<button type="submit">Send Message</button><p class="note">Demo form: messages are not sent.</p></form>
-<div class="btns" style="margin-top:16px;color:var(--c1)"><a class="btn ghost" href="https://facebook.com/838029156051913" target="_blank" rel="noopener">Facebook</a></div></section>
-<footer>Marcus&#x27; Barbershop · 426 Fremont Rd, Port Clinton, OH 43452 · <a href="tel:+15672806835">(567) 280-6835</a><br><small>Demo built by Noah Kurek for preview purposes. Not affiliated with Marcus&#x27; Barbershop.</small></footer>
-<a class="fab" href="tel:+15672806835" aria-label="Call">📞</a>
+  </table><p class="note">Hours from public listings. Please call to confirm.</p></div>
+  <div id="visit"><div class="eyebrow fade">Visit</div><h2 class="fade">Find us</h2>
+  <p class="addr">426 Fremont Rd, Port Clinton, OH 43452</p><p><a href="https://www.google.com/maps/search/?api=1&query=Marcus%27%20Barbershop%2C%20426%20Fremont%20Rd%2C%20Port%20Clinton%2C%20OH%2043452" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+  <iframe class="map fade" loading="lazy" title="Map" src="https://maps.google.com/maps?q=Marcus%27%20Barbershop%2C%20426%20Fremont%20Rd%2C%20Port%20Clinton%2C%20OH%2043452&output=embed"></iframe></div>
+</div></section>
+<section id="contact" style="padding-top:20px"><div class="wrap">
+  <div class="eyebrow fade">Contact</div><h2 class="fade">Get in touch</h2>
+  <form class="fade" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Demo only: this form is not connected yet. Please call (567) 280-6835.';">
+    <input placeholder="Your name" required><input placeholder="Phone or email" required><textarea rows="4" placeholder="How can we help?"></textarea>
+    <button type="submit">Send Message</button><p class="note">Demo form: messages are not sent.</p>
+  </form>
+  <div class="soc"><a href="https://facebook.com/838029156051913" target="_blank" rel="noopener">Facebook</a></div>
+</div></section>
+<footer>Marcus&#x27; Barbershop · 426 Fremont Rd, Port Clinton, OH 43452 · <a href="tel:+15672806835">(567) 280-6835</a><br><small>Demo built by Noah Kurek for preview purposes. Not affiliated with Marcus&#x27; Barbershop. Photos are sample stock images (Pexels license).</small></footer>
+<div class="callbar"><a class="c" href="tel:+15672806835">📞 Call Now</a><a class="d" href="https://www.google.com/maps/search/?api=1&query=Marcus%27%20Barbershop%2C%20426%20Fremont%20Rd%2C%20Port%20Clinton%2C%20OH%2043452" target="_blank" rel="noopener">Directions</a></div>
+<script>
+(function(){var h=document.getElementById('hdr'),d=document.querySelector('.demo');
+function s(){var y=window.scrollY,b=d.offsetHeight;h.style.top=Math.max(0,b-y)+'px';h.classList.toggle('solid',y>b+40)}
+s();addEventListener('scroll',s,{passive:true});
+var els=document.querySelectorAll('.fade');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+els.forEach(function(e){io.observe(e)});})();
+</script>
 </body></html>
