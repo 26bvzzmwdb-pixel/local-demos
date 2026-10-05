@@ -79,11 +79,59 @@ footer{background:#0c0c0f;color:rgba(255,255,255,.75);text-align:center;padding:
 .fade{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .fade.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}}
+.top .bkbtn{background:var(--c2);color:var(--c1)!important;opacity:1!important;padding:8px 14px;border-radius:999px;font-weight:800}
+.mbk{display:none}@media(max-width:760px){.mbk{display:inline-block;background:var(--c2);color:var(--c1);text-decoration:none;font-weight:800;font-size:14px;padding:8px 14px;border-radius:999px}}
+.stats{background:var(--c1);color:#fff;padding:6px 20px 30px;margin-top:-1px}
+.stats-in{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(min-width:760px){.stats-in{grid-template-columns:repeat(4,1fr)}}
+.stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:16px;text-align:center}
+.stat b{display:block;font-size:30px;line-height:1.1;color:var(--c2);font-weight:900;letter-spacing:-.5px}
+.stat span{font-size:13px;opacity:.85}
+.book{background:linear-gradient(180deg,var(--bg),color-mix(in srgb,var(--c2) 14%,var(--bg)))}
+.bk-sub{color:var(--muted);margin:-12px 0 20px;max-width:640px}
+.bk{background:#fff;border-radius:22px;padding:22px 18px;box-shadow:0 18px 50px rgba(0,0,0,.12);max-width:640px;position:relative;border:1px solid rgba(0,0,0,.05)}
+.bk-flag{display:inline-block;background:#fff3cd;color:#5c4400;font-size:11.5px;font-weight:800;letter-spacing:.6px;padding:5px 10px;border-radius:8px;margin-bottom:14px}
+.bk-prog{display:flex;gap:6px;margin-bottom:16px}.bk-prog span{flex:1;height:5px;border-radius:5px;background:#e6e6ea;transition:background .3s}.bk-prog span.on{background:var(--c3)}
+.bk h3{margin:0 0 12px;font-size:19px}
+.bk-opts,.bk-slots{display:flex;flex-wrap:wrap;gap:8px}
+.bk-slots{display:grid;grid-template-columns:repeat(3,1fr)}
+.bk-o,.bk-type{font:inherit;font-size:15px;font-weight:600;padding:11px 14px;border-radius:12px;border:1.5px solid #ddd;background:#fff;color:var(--ink);cursor:pointer;transition:all .15s}
+.bk-o:hover,.bk-type:hover{border-color:var(--c3)}
+.bk-o.sel,.bk-type.sel{background:var(--c1);border-color:var(--c1);color:#fff}
+.bk-types{display:flex;gap:8px;margin-bottom:12px}.bk-types .bk-type{flex:1}
+.bk-nav{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+.bk-next,.bk-back{font:inherit;font-weight:800;padding:13px 20px;border-radius:12px;border:0;cursor:pointer}
+.bk-next{background:var(--c2);color:var(--c1)}.bk-next:disabled{opacity:.4;cursor:not-allowed}
+.bk-back{background:transparent;color:var(--muted)}
+.bk-small{font-size:13px;color:var(--muted);margin:10px 0 0}
+.cal{border:1px solid #eee;border-radius:16px;padding:12px}
+.cal-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.cal-h button{font:inherit;font-size:22px;width:40px;height:40px;border-radius:10px;border:0;background:#f2f2f4;cursor:pointer}.cal-h button:disabled{opacity:.3}
+.cal-w,.cal-d{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal-w span{font-size:12px;color:var(--muted);font-weight:700;padding:4px 0}
+.cal-d button{font:inherit;aspect-ratio:1;border:0;border-radius:10px;background:color-mix(in srgb,var(--c2) 18%,#fff);font-weight:700;cursor:pointer;color:var(--ink)}
+.cal-d button:disabled{background:transparent;color:#c4c4c8;cursor:default;font-weight:500}
+.cal-d button.sel{background:var(--c1);color:#fff}
+.bk-f{display:grid;gap:10px}
+.bk-done{width:64px;height:64px;border-radius:50%;background:var(--c2);color:var(--c1);display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:900;margin:4px auto 10px;animation:pop .5s ease}
+@keyframes pop{0%{transform:scale(.3);opacity:0}70%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+.bk-sum{background:#f7f7f9;border-radius:14px;padding:6px 14px}.bk-sum div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #eee;font-size:15px}.bk-sum div:last-child{border:0}.bk-sum span{color:var(--muted)}.bk-sum b{text-align:right}
+.bk-demo{text-align:center;font-weight:800;color:var(--c3);margin:14px 0 0}
+.bk-primary{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:0 0 22px}
+.bk-primary .btn{font-size:18px;padding:16px 26px;box-shadow:0 10px 26px rgba(0,0,0,.18)}
+.bk-primary small{color:var(--muted)}
+.faq details{background:#fff;border-radius:16px;margin-bottom:10px;box-shadow:0 1px 2px rgba(0,0,0,.05),0 6px 18px rgba(0,0,0,.04);overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:17px 50px 17px 18px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:24px;color:var(--c3);transition:transform .25s}
+.faq details[open] summary:after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{margin:0;padding:0 18px 17px;color:var(--muted)}
+.callbar .b{background:rgba(255,255,255,.12);color:#fff}
+
 </style>
 </head>
 <body>
 <div class="demo">Demo site made for Salon Sterling by Noah Kurek. Not affiliated, not live.</div>
-<header class="top" id="hdr"><b>Salon Sterling</b><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav></header>
+<header class="top" id="hdr"><b>Salon Sterling</b><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#hours">Hours</a><a href="#visit">Visit</a><a href="#faq">FAQ</a><a href="#book" class="bkbtn">Book Now</a></nav><a class="mbk" href="#book">Book Now</a></header>
 <section class="hero" style="padding:0">
   <div class="bg" role="img" aria-label="Sample stock photo"></div>
   <div class="in">
@@ -95,6 +143,13 @@ footer{background:#0c0c0f;color:rgba(255,255,255,.75);text-align:center;padding:
   </div>
   <div class="photo-note">Sample stock photo. Your own photos go here.</div>
 </section>
+<div class="stats"><div class="wrap stats-in">
+<div class="stat fade"><b data-n="4.9" data-s="">4.9</b><span>★ rating</span></div>
+<div class="stat fade"><b data-n="16" data-s="">16</b><span>public reviews</span></div>
+<div class="stat fade"><b>By appt.</b><span>call to book</span></div>
+<div class="stat fade"><b>Sandusky</b><span>W Perkins Ave</span></div>
+</div></div>
+
 <section id="services"><div class="wrap">
   <div class="eyebrow fade">What we do</div><h2 class="fade">Services</h2>
   <div class="grid">
@@ -106,6 +161,92 @@ footer{background:#0c0c0f;color:rgba(255,255,255,.75);text-align:center;padding:
 <div class="card fade"><div class="ic">📸</div><div><h3>Consultations</h3><p>Bring your inspiration pics.</p></div></div>
   </div>
 </div></section>
+<section id="book" class="book"><div class="wrap">
+  <div class="eyebrow fade">Book online · demo</div><h2 class="fade">Book an appointment</h2>
+  <p class="bk-sub fade">Salon Sterling is by appointment. Pick a service, a day and a time to request a visit. The salon confirms by phone.</p>
+  
+  <div class="bk fade" id="bk" aria-live="polite">
+    <div class="bk-flag">DEMO · sample times · nothing is sent or saved</div>
+    <div class="bk-prog"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="bk-step" data-s="1">
+      <h3>1. Pick a service</h3>
+      
+      <div class="bk-opts" id="bkSvc"></div>
+      <div class="bk-nav"><span></span><button type="button" class="bk-next" data-go="2" disabled>Next →</button></div>
+    </div>
+    <div class="bk-step" data-s="2" hidden>
+      <h3>2. Pick a day</h3>
+      <div class="cal"><div class="cal-h"><button type="button" class="cal-p" aria-label="Previous month">‹</button><b id="calM"></b><button type="button" class="cal-n" aria-label="Next month">›</button></div>
+      <div class="cal-w"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="cal-d" id="calD"></div></div>
+      <p class="bk-small">Only days the business is open can be picked.</p>
+      <div class="bk-nav"><button type="button" class="bk-back" data-go="1">← Back</button><button type="button" class="bk-next" data-go="3" disabled>Next →</button></div>
+    </div>
+    <div class="bk-step" data-s="3" hidden>
+      <h3>3. Pick a time</h3>
+      <p class="bk-small" id="bkDay"></p>
+      <div class="bk-slots" id="bkSlots"></div>
+      <p class="bk-small">SAMPLE TIMES: Salon Sterling doesn&#x27;t post hours, so these are placeholder slots. Call (419) 502-0292 to confirm.</p>
+      <div class="bk-nav"><button type="button" class="bk-back" data-go="2">← Back</button><button type="button" class="bk-next" data-go="4" disabled>Next →</button></div>
+    </div>
+    <div class="bk-step" data-s="4" hidden>
+      <h3>4. Your details</h3>
+      <div class="bk-f"><input id="bkName" placeholder="Name" autocomplete="off"><input id="bkPhone" placeholder="Phone" inputmode="tel" autocomplete="off"><textarea id="bkNotes" rows="3" placeholder="Stylist preference, hair goals, inspo details"></textarea></div>
+      <p class="bk-small">Demo only: what you type stays on this page and is never sent or saved.</p>
+      <div class="bk-nav"><button type="button" class="bk-back" data-go="3">← Back</button><button type="button" class="bk-next bk-conf" data-go="5" disabled>Confirm</button></div>
+    </div>
+    <div class="bk-step" data-s="5" hidden>
+      <div class="bk-done">✓</div>
+      <h3 style="text-align:center">Request received!</h3>
+      <div class="bk-sum" id="bkSum"></div>
+      <p class="bk-demo">Demo only. Online booking goes live when your site does.</p>
+      <div class="bk-nav"><span></span><button type="button" class="bk-back" id="bkReset">Start over</button></div>
+    </div>
+  </div>
+</div></section>
+<script>
+(function(){
+var C={"services": ["Cut & style", "Color", "Highlights / lowlights", "Nails", "Skincare", "Consultation"], "multi": false, "sched": [null, null, [600, 1020], [600, 1020], [600, 1020], [600, 1020], [600, 900]], "step": 60, "last": 60, "sumSvc": "Service", "sumTime": "Time"};
+var st={step:1,svc:[],type:C.types?C.types[0]:null,date:null,time:null},root=document.getElementById('bk');
+var M=['January','February','March','April','May','June','July','August','September','October','November','December'],DW=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var today=new Date();today.setHours(0,0,0,0);var maxD=new Date(today);maxD.setDate(maxD.getDate()+60);
+var view=new Date(today.getFullYear(),today.getMonth(),1);
+function $(s){return root.querySelector(s)}
+function fmt(m){var h=Math.floor(m/60),mi=m%60,ap=h>=12?'PM':'AM',hh=h%12||12;return hh+':'+(mi<10?'0':'')+mi+' '+ap}
+function go(n){st.step=n;root.querySelectorAll('.bk-step').forEach(function(e){e.hidden=+e.dataset.s!==n});
+ root.querySelectorAll('.bk-prog span').forEach(function(e,i){e.className=i<n?'on':''});
+ if(n===2)cal();if(n===3)slots();if(n===5)sum();check();}
+function check(){var ok={1:st.svc.length>0,2:!!st.date,3:st.time!==null,4:$('#bkName').value.trim()&&$('#bkPhone').value.trim()};
+ root.querySelectorAll('.bk-step[data-s="'+st.step+'"] .bk-next').forEach(function(b){b.disabled=!ok[st.step]});}
+var sv=$('#bkSvc');C.services.forEach(function(s){var b=document.createElement('button');b.type='button';b.className='bk-o';b.textContent=s;
+ b.onclick=function(){if(C.multi){var i=st.svc.indexOf(s);if(i<0)st.svc.push(s);else st.svc.splice(i,1);b.classList.toggle('sel')}else{st.svc=[s];sv.querySelectorAll('.bk-o').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel')}check()};sv.appendChild(b)});
+root.querySelectorAll('.bk-type').forEach(function(b){b.onclick=function(){st.type=b.dataset.t;root.querySelectorAll('.bk-type').forEach(function(x){x.classList.toggle('sel',x===b)})}});
+function open(d){return C.sched[d.getDay()]!=null}
+function cal(){var y=view.getFullYear(),m=view.getMonth(),first=new Date(y,m,1).getDay(),days=new Date(y,m+1,0).getDate(),g=$('#calD');g.innerHTML='';$('#calM').textContent=M[m]+' '+y;
+ for(var i=0;i<first;i++)g.appendChild(document.createElement('span'));
+ for(var d=1;d<=days;d++){(function(d){var dt=new Date(y,m,d),b=document.createElement('button');b.type='button';b.textContent=d;
+  var dis=dt<today||dt>maxD||!open(dt);if(dt.getTime()===today.getTime()){var c=C.sched[dt.getDay()];var now=new Date();if(!c||now.getHours()*60+now.getMinutes()>c[1]-C.last)dis=true}
+  if(dis)b.disabled=true;if(st.date&&dt.getTime()===st.date.getTime())b.className='sel';
+  b.onclick=function(){st.date=dt;st.time=null;cal();check()};g.appendChild(b)})(d)}
+ $('.cal-p').disabled=(y===today.getFullYear()&&m===today.getMonth());$('.cal-n').disabled=new Date(y,m+1,1)>maxD;}
+$('.cal-p').onclick=function(){view.setMonth(view.getMonth()-1);cal()};$('.cal-n').onclick=function(){view.setMonth(view.getMonth()+1);cal()};
+function slots(){var c=C.sched[st.date.getDay()],w=$('#bkSlots');w.innerHTML='';$('#bkDay').textContent=DW[st.date.getDay()]+', '+M[st.date.getMonth()]+' '+st.date.getDate();
+ var now=new Date(),isT=st.date.getTime()===today.getTime();
+ for(var t=c[0]+(C.first||0);t<=c[1]-C.last;t+=C.step){(function(t){if(isT&&t<=now.getHours()*60+now.getMinutes())return;var b=document.createElement('button');b.type='button';b.className='bk-o'+(st.time===t?' sel':'');b.textContent=fmt(t);
+  b.onclick=function(){st.time=t;w.querySelectorAll('.bk-o').forEach(function(x){x.classList.remove('sel')});b.classList.add('sel');check()};w.appendChild(b)})(t)}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function sum(){var x=$('#bkExtra');var rows=[[C.sumSvc,st.svc.join(', ')]];if(C.types)rows.unshift(['Type',st.type]);
+ rows.push(['Date',DW[st.date.getDay()]+', '+M[st.date.getMonth()]+' '+st.date.getDate()],[C.sumTime,fmt(st.time)],['Name',$('#bkName').value]);
+ if(x&&x.value)rows.push([C.extraLabel,x.value]);
+ $('#bkSum').innerHTML=rows.map(function(r){return'<div><span>'+esc(r[0])+'</span><b>'+esc(r[1])+'</b></div>'}).join('');}
+root.querySelectorAll('[data-go]').forEach(function(b){b.onclick=function(){go(+b.dataset.go)}});
+['#bkName','#bkPhone'].forEach(function(s){$(s).addEventListener('input',check)});
+$('#bkReset').onclick=function(){st.svc=[];st.date=null;st.time=null;sv.querySelectorAll('.bk-o').forEach(function(x){x.classList.remove('sel')});root.querySelectorAll('input,textarea').forEach(function(i){i.value=''});go(1)};
+window.__bkDemo=function(n){var o=sv.querySelector('.bk-o');if(!st.svc.length)o.click();if(n>=2){go(2);var b=root.querySelector('#calD button:not([disabled])');if(b)b.click()}
+ if(n>=3){go(3);var s=root.querySelectorAll('#bkSlots .bk-o');if(s[2])s[2].click();else if(s[0])s[0].click()}if(n>=4){go(4);$('#bkName').value='Sample Name';$('#bkPhone').value='555-0100';check()}if(n>=5)go(5);if(n===1)go(1)};
+go(1);
+})();
+</script>
+
 <section id="gallery" class="dark"><div class="wrap">
   <div class="eyebrow fade">Gallery</div><h2 class="fade">A look inside</h2>
   <div class="gal fade">
@@ -124,6 +265,17 @@ footer{background:#0c0c0f;color:rgba(255,255,255,.75);text-align:center;padding:
   <p class="addr">220 W Perkins Ave, Suite C, Sandusky, OH 44870</p><p><a href="https://www.google.com/maps/search/?api=1&query=Salon%20Sterling%2C%20220%20W%20Perkins%20Ave%2C%20Suite%20C%2C%20Sandusky%2C%20OH%2044870" target="_blank" rel="noopener">Open in Google Maps →</a></p>
   <iframe class="map fade" loading="lazy" title="Map" src="https://maps.google.com/maps?q=Salon%20Sterling%2C%20220%20W%20Perkins%20Ave%2C%20Suite%20C%2C%20Sandusky%2C%20OH%2044870&output=embed"></iframe></div>
 </div></section>
+<section id="faq"><div class="wrap">
+  <div class="eyebrow fade">FAQ</div><h2 class="fade">Common questions</h2>
+  <div class="faq fade">
+<details><summary>Where are you located?</summary><p>220 W Perkins Ave, Suite C, Sandusky, OH 44870.</p></details>
+<details><summary>Are you by appointment?</summary><p>Yes. Call or message to book: (419) 502-0292.</p></details>
+<details><summary>What services do you offer?</summary><p>Hair (cuts, styling, color, highlights and lowlights), nails, and skincare.</p></details>
+<details><summary>Do you take walk-ins?</summary><p>Call us to ask: (419) 502-0292.</p></details>
+<details><summary>What are your hours?</summary><p>Call us to ask. Hours vary by appointment.</p></details>
+  </div>
+</div></section>
+
 <section id="contact" style="padding-top:20px"><div class="wrap">
   <div class="eyebrow fade">Contact</div><h2 class="fade">Get in touch</h2>
   <form class="fade" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Demo only: this form is not connected yet. Please call (419) 502-0292.';">
@@ -133,7 +285,7 @@ footer{background:#0c0c0f;color:rgba(255,255,255,.75);text-align:center;padding:
   <div class="soc"><a href="https://facebook.com/115717848139391" target="_blank" rel="noopener">Facebook</a> <a href="mailto:salonsterlingsandusky@gmail.com">Email</a></div>
 </div></section>
 <footer>Salon Sterling · 220 W Perkins Ave, Suite C, Sandusky, OH 44870 · <a href="tel:+14195020292">(419) 502-0292</a><br><small>Demo built by Noah Kurek for preview purposes. Not affiliated with Salon Sterling. Photos are sample stock images (Pexels license).</small></footer>
-<div class="callbar"><a class="c" href="tel:+14195020292">📞 Call Now</a><a class="d" href="https://www.google.com/maps/search/?api=1&query=Salon%20Sterling%2C%20220%20W%20Perkins%20Ave%2C%20Suite%20C%2C%20Sandusky%2C%20OH%2044870" target="_blank" rel="noopener">Directions</a></div>
+<div class="callbar"><a class="c" href="tel:+14195020292">📞 Call</a><a class="b" href="#book">Book</a><a class="d" href="https://www.google.com/maps/search/?api=1&query=Salon%20Sterling%2C%20220%20W%20Perkins%20Ave%2C%20Suite%20C%2C%20Sandusky%2C%20OH%2044870" target="_blank" rel="noopener">Directions</a></div>
 <script>
 (function(){var h=document.getElementById('hdr'),d=document.querySelector('.demo');
 function s(){var y=window.scrollY,b=d.offsetHeight;h.style.top=Math.max(0,b-y)+'px';h.classList.toggle('solid',y>b+40)}
@@ -142,5 +294,7 @@ var els=document.querySelectorAll('.fade');
 if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
 els.forEach(function(e){io.observe(e)});})();
+var sn=document.querySelectorAll('.stat b[data-n]');var so=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;var el=en.target,to=parseFloat(el.dataset.n),dec=(el.dataset.n.split('.')[1]||'').length,suf=el.dataset.s||'',t0=performance.now();so.unobserve(el);
+(function f(t){var p=Math.min(1,(t-t0)/1100);p=1-Math.pow(1-p,3);el.textContent=(to*p).toFixed(dec)+suf;if(p<1)requestAnimationFrame(f)})(t0)})},{threshold:.4});sn.forEach(function(x){so.observe(x)});
 </script>
 </body></html>
