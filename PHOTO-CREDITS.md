@@ -10,5 +10,9 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - bennys-barber-shop: 2076931 (hero, desktop + mobile crop), 17665771, 11427196, 9709013
 - star-diner: 36550107 (hero, desktop), 22882257 (hero, mobile), 29839738, 35006610, 22873817
 - taqueria-la-michoacana: 27365296 (hero, desktop), 34289267 (hero, mobile), 37256256, 12317601, 5848718
+- bake-erie: 205961 (hero), 291528 (hero, mobile), 1126359, 230325, 1055272
+- peace-by-piece-pastries: 291528 (hero), 1055272 (hero, mobile), 1055271, 1126359, 230325
+- reys-barbershop: 3998397 (hero), 1453005 (hero, mobile), 17665771, 7518728, 12464841
+- scooters-dairy-bar: 1625235 (hero), 1352281 (hero, mobile), 2983102, 1352278, 1343504
 
 URL format: https://www.pexels.com/photo/<id>/
