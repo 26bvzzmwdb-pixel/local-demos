@@ -25,4 +25,15 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - amsden-house-restaurant: 35006610 (hero), 22882257 (hero, mobile), 29839738, 22873817, 27080346
 - front-yard-market: 1132047 (hero), 2899682 (hero, mobile), 230325, 1126359, 1775043
 
+- convenient-auto: 8986148 (hero), 8986041 (hero, mobile), 8986130, 3807517, 4116169
+- kaple-auto-repair: 8986132 (hero), 8985712 (hero, mobile), 34337558, 4489776, 8986174
+- sandusky-tattoo-co: 28991664 (hero), 7005667 (hero, mobile), 39626958, 7005729, 30775725
+- hair-illusions: 3993323 (hero), 4981460 (hero, mobile), 3993136, 3993146, 14564860
+- doughin-crazy: 7761775 (hero), 5060382 (hero, mobile), 37022352, 34711204, 6412948
+- sandusky-hardware: 12917478 (hero), 38575500 (hero, mobile), 38575493, 28867253, 12340557
+- sandusky-bait-company: 6478088 (hero), 6478156 (hero, mobile), 10409776, 6478117, 5571604
+- profiles-hair-studio: 3993307 (hero), 18483780 (hero, mobile), 7388908, 3993448, 38300039
+- beyoutiful-nails: 3997384 (hero), 7446915 (hero, mobile), 4677846, 13424007, 6135675
+- sunsations-tanning: 16645419 (hero), 8907215 (hero, mobile), 7195804, 6899549, 14256894
+
 URL format: https://www.pexels.com/photo/<id>/
