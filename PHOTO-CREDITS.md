@@ -56,5 +56,13 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - ancient-celtic-shop: 32684031 (hero), 36184606 (hero, mobile), 30829322, 11987049, 21235148
 - k-and-a-nails-spa: 34885849 (hero), 36207029 (hero, mobile), 3997384, 7446915, 34871557
 - lucky-lukes-tattoo: 28991664 (hero), 7005667 (hero, mobile), 39626958, 7005729, 30775725
+- diamond-nail-salon: 36328527 (hero), 22668324 (hero, mobile), 34871557, 36207029, 34885849
+- the-nail-nook: 3997384 (hero), 7446915 (hero, mobile), 4677846, 13424007, 6135675
+- bold-beauty-bar: 33867518 (hero), 34602202 (hero, mobile), 3993311, 18483780, 38300039
+- mph-repair: 32729928 (hero), 36103856 (hero, mobile), 32797861, 8986119, 279949
+- sacred-healing-massotherapy: 6560304 (hero), 5793808 (hero, mobile), 5240637, 9335978, 20860606
+- east-harbor-pooch-parlor: 19145875 (hero), 12943750 (hero, mobile), 6816863, 4587959, 19145888
+- everything-auto: 8986132 (hero), 8985712 (hero, mobile), 34337558, 4489776, 8986174
+- evolved-salon-studios: 3993136 (hero), 3993323 (hero, mobile), 4677846, 3993146, 13424007
 
 URL format: https://www.pexels.com/photo/<id>/
