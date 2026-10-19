@@ -75,4 +75,9 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - enchanted-escape-esthetics: 5240637 (hero), 9335978 (hero, mobile), 6560304, 20860606, 5793808
 - hometown-bakery: 291528 (hero), 1055272 (hero, mobile), 1055271, 1126359, 230325
 
+- mrg-beauty-bar: 5240637 (hero), 7446915 (hero, mobile), 3997384, 6560304, 6899549
+- home-town-roots-salon: 3993323 (hero), 3993311 (hero, mobile), 4981460, 3993136, 3993307
+- the-beauty-vault: 6899549 (hero), 9335978 (hero, mobile), 7195804, 20860606, 5793808
+- miraya-serae-esthetics: 7195804 (hero), 9335978 (hero, mobile), 6560304, 6899549, 20860606
+
 URL format: https://www.pexels.com/photo/<id>/
