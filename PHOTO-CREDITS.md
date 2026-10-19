@@ -65,4 +65,14 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - everything-auto: 8986132 (hero), 8985712 (hero, mobile), 34337558, 4489776, 8986174
 - evolved-salon-studios: 3993136 (hero), 3993323 (hero, mobile), 4677846, 3993146, 13424007
 
+- beautiful-people-monica: 3993323 (hero), 3993311 (hero, mobile), 3993136, 3993146, 3993448
+- caitlin-slane-beauty: 3993307 (hero), 4981460 (hero, mobile), 7388908, 14564860, 36587243
+- lashbyash: 33867518 (hero), 34602202 (hero, mobile), 3993311, 18483780, 38300039
+- tha-booth: 3998397 (hero), 1453005 (hero, mobile), 17665771, 7518728, 12464841
+- maceys-manis: 3997384 (hero), 7446915 (hero, mobile), 4677846, 13424007, 6135675
+- luxe-sunless-tanning: 16645419 (hero), 8907215 (hero, mobile), 7195804, 6899549, 14256894
+- high-maintenance-massage: 6560304 (hero), 5793808 (hero, mobile), 5240637, 9335978, 20860606
+- enchanted-escape-esthetics: 5240637 (hero), 9335978 (hero, mobile), 6560304, 20860606, 5793808
+- hometown-bakery: 291528 (hero), 1055272 (hero, mobile), 1055271, 1126359, 230325
+
 URL format: https://www.pexels.com/photo/<id>/
