@@ -128,6 +128,15 @@ footer{background:#0c0c0f;color:rgba(255,255,255,.75);text-align:center;padding:
 .callbar .b{background:rgba(255,255,255,.12);color:#fff}
 
 </style>
+<style id="nbs-fix-1027">/* layout + accessibility fixes, Oct 27 2026 (no content changes) */
+body{overflow-x:clip}img{max-width:100%}
+:focus-visible{outline:3px solid var(--c3,#0b4a73);outline-offset:2px}
+header.top{gap:10px}header.top b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mbk{white-space:nowrap;flex:0 0 auto}
+.stats-in{grid-template-columns:repeat(2,minmax(0,1fr))}@media(min-width:760px){.stats-in{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stat b{overflow-wrap:anywhere}
+.callbar a{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+</style>
 </head>
 <body>
 <div class="demo">Demo site made for Scooter&#x27;s Dairy Bar by Noah Kurek. Not affiliated, not live.</div>
