@@ -134,8 +134,8 @@ body{overflow-x:clip}img{max-width:100%}
 header.top{gap:10px}header.top b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mbk{white-space:nowrap;flex:0 0 auto}
 .stats-in{grid-template-columns:repeat(2,minmax(0,1fr))}@media(min-width:760px){.stats-in{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.stat b{overflow-wrap:anywhere}
-.callbar a{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stat b{overflow-wrap:break-word;hyphens:auto}@media(max-width:480px){.stat b{font-size:clamp(19px,6vw,26px)}}
+.callbar{gap:8px}.callbar a{min-width:0;white-space:nowrap;overflow:hidden}@media(max-width:480px){.callbar a{font-size:clamp(13px,3.7vw,15px);padding-left:4px;padding-right:4px}}
 </style>
 </head>
 <body>

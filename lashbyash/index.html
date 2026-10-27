@@ -134,8 +134,8 @@ body{overflow-x:clip}img{max-width:100%}
 header.top{gap:10px}header.top b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mbk{white-space:nowrap;flex:0 0 auto}
 .stats-in{grid-template-columns:repeat(2,minmax(0,1fr))}@media(min-width:760px){.stats-in{grid-template-columns:repeat(4,minmax(0,1fr))}}
-.stat b{overflow-wrap:anywhere}
-.callbar a{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stat b{overflow-wrap:break-word;hyphens:auto}@media(max-width:480px){.stat b{font-size:clamp(19px,6vw,26px)}}
+.callbar{gap:8px}.callbar a{min-width:0;white-space:nowrap;overflow:hidden}@media(max-width:480px){.callbar a{font-size:clamp(13px,3.7vw,15px);padding-left:4px;padding-right:4px}}
 </style>
 </head>
 <body>
@@ -147,7 +147,7 @@ header.top{gap:10px}header.top b{min-width:0;overflow:hidden;text-overflow:ellip
     <span class="pill">🌸 Hair Salon · Fremont, OH</span>
     <h1>Lashbyash</h1>
     <p class="tag">Color, cuts, highlights and extensions by Ashley Ellis on North Street in Fremont.</p>
-    <div class="meta"><span>★  ·  public reviews</span><span>📍 Fremont, Ohio</span></div>
+    <div class="meta"><span>📍 Fremont, Ohio</span></div>
     <div class="btns"><a class="btn" href="tel:+15673410093">📞 Call (567) 341-0093</a><a class="btn ghost" href="#visit">Get Directions</a></div>
   </div>
   <div class="photo-note">Sample stock photo. Your own photos go here.</div>
