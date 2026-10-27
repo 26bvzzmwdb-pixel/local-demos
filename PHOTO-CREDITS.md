@@ -80,4 +80,9 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - the-beauty-vault: 6899549 (hero), 9335978 (hero, mobile), 7195804, 20860606, 5793808
 - miraya-serae-esthetics: 7195804 (hero), 9335978 (hero, mobile), 6560304, 6899549, 20860606
 
+- kb-detailing: 17029940 (hero), 37809565 (hero, mobile), 20042048, 17623850, 4870702
+- josh-and-sons-llc: 14965464 (hero), 5652626 (hero, mobile), 38524253, 14203609, 19632196
+- kokomos-at-the-keys: 6173811 (hero), 1123249 (hero, mobile), 33649028, 36782575, 6369302
+- sidetrax-bar-grill: 4497543 (hero), 35926366 (hero, mobile), 12565709, 9725989, 34327748
+
 URL format: https://www.pexels.com/photo/<id>/
