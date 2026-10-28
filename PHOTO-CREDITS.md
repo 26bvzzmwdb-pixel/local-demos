@@ -85,4 +85,10 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - kokomos-at-the-keys: 6173811 (hero), 1123249 (hero, mobile), 33649028, 36782575, 6369302
 - sidetrax-bar-grill: 4497543 (hero), 35926366 (hero, mobile), 12565709, 9725989, 34327748
 
+- minor-kustoms: 6870319 (hero), 4315572 (hero, mobile), 37163499, 13746768, 8985462
+- c-and-c-landscaping: 37554739 (hero), 6728930 (hero, mobile), 4162009, 33514335, 4167967
+- emerald-beauty-salon-and-spa: 3993323 (hero), 3993311 (hero, mobile), 3997384, 4677846, 3993307
+- orenda-salon: 3993307 (hero), 18483780 (hero, mobile), 7388908, 3993448, 38300039
+- 546-tattoo-studio: 28991664 (hero), 7005667 (hero, mobile), 39626958, 7005729, 30775725
+
 URL format: https://www.pexels.com/photo/<id>/
