@@ -91,4 +91,12 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - orenda-salon: 3993307 (hero), 18483780 (hero, mobile), 7388908, 3993448, 38300039
 - 546-tattoo-studio: 28991664 (hero), 7005667 (hero, mobile), 39626958, 7005729, 30775725
 
+- djunk-removal-crew: 7464403 (hero, desktop + mobile), 7464676, 11017880, 4391486
+- cr-exchange: 4914811 (hero), 5531542 (hero, mobile), 9594667, 8633771, 19599223
+- lolas-vintage-lakehouse: 30490401 (hero), 6842156 (hero, mobile), 30441577, 13342972, 10848990
+- mantiques-studio-and-gallery: 6842156 (hero), 10848990 (hero, mobile), 30490401, 30441577, 13342972
+- nexxt-level-fit-academy: 13863730 (hero), 16513599 (hero, mobile), 29611432, 7187878, 16513600
+- true-innovations: 28991664 (hero), 7005667 (hero, mobile), 39626958, 7005729, 30775725
+- lees-outboard-motor-service: 32967413 (hero), 9592461 (hero, mobile), 980826, 37443231, 6478088
+
 URL format: https://www.pexels.com/photo/<id>/
