@@ -99,4 +99,10 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - true-innovations: 28991664 (hero), 7005667 (hero, mobile), 39626958, 7005729, 30775725
 - lees-outboard-motor-service: 32967413 (hero), 9592461 (hero, mobile), 980826, 37443231, 6478088
 
+- irish-charters: 28716480 (hero), 11196749 (hero, mobile), 11143764, 16164817, 6478088
+- pin-ups-salon: 33867518 (hero), 34602202 (hero, mobile), 3993136, 4981460, 14564860
+- the-lake-house-boutique: 15532709 (hero), 33731139 (hero, mobile), 33316022, 37504780, 36788368
+- ben-eishen-painting-electrical: 5493655 (hero), 6474496 (hero, mobile), 5493653, 5799133, 5799084
+- lucys-stitches: 16120717 (hero), 37409127 (hero, mobile), 7147645, 6765645, 7147590
+
 URL format: https://www.pexels.com/photo/<id>/
