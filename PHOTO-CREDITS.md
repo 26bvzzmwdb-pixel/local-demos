@@ -106,3 +106,6 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - lucys-stitches: 16120717 (hero), 37409127 (hero, mobile), 7147645, 6765645, 7147590
 
 URL format: https://www.pexels.com/photo/<id>/
+
+- crowe-build-co: 39398590 (hero), 10451773 (hero, mobile), 39142433, 14947071, 13603742
+- hnr-automotive: same photos as minor-kustoms: 6870319, 4315572, 37163499, 13746768, 8985462
