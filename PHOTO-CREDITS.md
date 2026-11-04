@@ -105,6 +105,11 @@ All photos are sample stock images from Pexels (Pexels License: free for commerc
 - ben-eishen-painting-electrical: 5493655 (hero), 6474496 (hero, mobile), 5493653, 5799133, 5799084
 - lucys-stitches: 16120717 (hero), 37409127 (hero, mobile), 7147645, 6765645, 7147590
 
+- laws-electric: 27928762 (hero), 17924298 (hero, mobile), 257736, 7937305, 4981794
+- tap-construction: 21033111 (hero), 13931828 (hero, mobile), 13131003, 31001841, 28757526
+- teresas-make-it-fit: 3984871 (hero), 35538626 (hero, mobile), 34563856, 7147645, 6765645
+- buehler-handyman-services: 11427401 (hero), 15124969 (hero, mobile), 38934134, 5691639, 5493653
+
 URL format: https://www.pexels.com/photo/<id>/
 
 - crowe-build-co: 39398590 (hero), 10451773 (hero, mobile), 39142433, 14947071, 13603742
